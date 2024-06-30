@@ -1,5 +1,3 @@
-import './CoreConcepts.css';
-
 export default function CoreConcept({ concept }) {
   const { image, title, description } = concept;
 
