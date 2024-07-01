@@ -28,10 +28,7 @@ function App() {
         <section id="core-concepts">
           <h2>Core Concepts</h2>
           <ul>
-            <CoreConcept concept={CORE_CONCEPTS[0]} />
-            <CoreConcept concept={CORE_CONCEPTS[1]} />
-            <CoreConcept concept={CORE_CONCEPTS[2]} />
-            <CoreConcept concept={CORE_CONCEPTS[3]} />
+            {CORE_CONCEPTS.map((concept, index) => <CoreConcept key={index} concept={concept} />)}
           </ul>
         </section>
         <section id="examples">
@@ -42,7 +39,7 @@ function App() {
             <TabButton onClick={() => handleClick('props')} isSelected={selectedButton === 'props'}>Props</TabButton>
             <TabButton onClick={() => handleClick('state')} isSelected={selectedButton === 'state'}>State</TabButton>
           </menu>
-          
+
           {tabContent}
 
         </section>
