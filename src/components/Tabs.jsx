@@ -1,6 +1,6 @@
 import TabButton from "./TabButton"
 
-export default function Tabs({ children, tabsContainer, tabs }) {
+export default function Tabs({ children, tabsContainer = 'menu', tabs }) {
   const TabsContainer = tabsContainer;
 
   return (
